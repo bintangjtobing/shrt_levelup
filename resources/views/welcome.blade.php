@@ -10,7 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
     <link rel="shortcut icon"
-        href="https://res.cloudinary.com/dnsekavtx/image/upload/v1722269637/duhani_icon_gs42tl.jpg" type="image/jpg">
+        href="https://res.cloudinary.com/boxityapp/image/upload/v1730810393/levelupgaming/nupfkufgxx6oigtb75ih.png"
+        type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="{{ asset('style.css') }}">
     <style>
@@ -34,27 +35,27 @@
 
     <title>LevelUp Gaming Market URL Shortener Tool</title>
     <meta name="description"
-        content="An internal tool for Duhani Capital to streamline and customize long URLs for internal communication, reporting, and operational efficiency. Secure and reliable URL shortening for internal use only.">
+        content="An internal tool for LevelUp Game Hub Capital to streamline and customize long URLs for internal communication, reporting, and operational efficiency. Secure and reliable URL shortening for internal use only.">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="LevelUp Gaming Market URL Shortener Tool">
     <meta property="og:description"
-        content="An internal tool for Duhani Capital to streamline and customize long URLs for internal communication, reporting, and operational efficiency. Secure and reliable URL shortening for internal use only.">
+        content="An internal tool for LevelUp Game Hub Capital to streamline and customize long URLs for internal communication, reporting, and operational efficiency. Secure and reliable URL shortening for internal use only.">
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="LevelUp Gaming Market URL Shortener Tool">
     <meta name="twitter:description"
-        content="An internal tool for Duhani Capital to streamline and customize long URLs for internal communication, reporting, and operational efficiency. Secure and reliable URL shortening for internal use only.">
+        content="An internal tool for LevelUp Game Hub Capital to streamline and customize long URLs for internal communication, reporting, and operational efficiency. Secure and reliable URL shortening for internal use only.">
 </head>
 
 <body>
     <div class="container">
         <header class="d-flex flex-wrap align-items-center justify-content-between py-3 mb-4 border-bottom">
-            <!-- Logo Duhani -->
+            <!-- Logo LevelUp Game Hub -->
             <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-                <img src="https://res.cloudinary.com/dnsekavtx/image/upload/v1722256718/duhani_logo_o95yph.png"
-                    alt="Duhani Logo" class="img-fluid" style="width: 200px;">
+                <img src="https://res.cloudinary.com/boxityapp/image/upload/v1730810393/levelupgaming/zgsvozukgxyrpnybvg22.png"
+                    alt="LevelUp Game Hub Logo" class="img-fluid" style="width: 200px;">
             </a>
 
             <!-- Button "Need help?" -->
