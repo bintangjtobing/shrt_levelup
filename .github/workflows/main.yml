@@ -1,0 +1,34 @@
+name: DuhaniCapital ShortURL Deployment
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v4
+
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.2"
+
+      - name: Install Dependencies
+        run: |
+          composer install
+          cp .env.production .env
+          php artisan key:generate --ansi
+          sudo apt-get install -y sshpass
+
+      - name: Deploy to Production
+        if: github.ref == 'refs/heads/master'
+        run: |
+          sshpass -p 'mFjIoDjdTqiJRRP' rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no" ./ duhanicampaign@92.205.161.185:/home/duhanicampaign/short.duhani-campaign.com/
+          sshpass -p 'mFjIoDjdTqiJRRP' ssh -o StrictHostKeyChecking=no duhanicampaign@92.205.161.185 'cd /home/duhanicampaign/short.duhani-campaign.com && php artisan key:generate --ansi && php artisan migrate --force && php artisan optimize:clear && php artisan config:clear'
