@@ -105,7 +105,9 @@
                     @endif
                     <!-- Left Side -->
                     <div class="col-md-6">
-                        <h1 class="text-primary">URL Shortener - Simplify and Customize Your Links</h1>
+                        <h1 class="text-primary" style="color:#6dbc08 !important;">URL Shortener - Simplify and
+                            Customize Your Links
+                        </h1>
                         <p>Make your long URLs shorter and easier to share with our URL shortening tool. This tool
                             allows you to create custom, manageable short URLs, helping you streamline your links for
                             social media, emails, and other digital campaigns.</p>
@@ -211,7 +213,7 @@
                                     <td class="action-cell" style="text-align: right;">
                                         <!-- Corrected alignment -->
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-primary dropdown-toggle"
+                                            <button type="button" class="btn btn-success dropdown-toggle"
                                                 data-bs-toggle="dropdown" aria-expanded="false">
                                                 Action
                                             </button>
