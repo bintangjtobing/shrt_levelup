@@ -1,12 +1,12 @@
-name: DuhaniCapital ShortURL Deployment
+name: LevelUpGameHub ShortURL Deployment
 
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
     branches:
-      - master
+      - main
 
 jobs:
   deploy:
@@ -28,7 +28,7 @@ jobs:
           sudo apt-get install -y sshpass
 
       - name: Deploy to Production
-        if: github.ref == 'refs/heads/master'
+        if: github.ref == 'refs/heads/main'
         run: |
-          sshpass -p 'mFjIoDjdTqiJRRP' rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no" ./ duhanicampaign@92.205.161.185:/home/duhanicampaign/short.duhani-campaign.com/
-          sshpass -p 'mFjIoDjdTqiJRRP' ssh -o StrictHostKeyChecking=no duhanicampaign@92.205.161.185 'cd /home/duhanicampaign/short.duhani-campaign.com && php artisan key:generate --ansi && php artisan migrate --force && php artisan optimize:clear && php artisan config:clear'
+          sshpass -p 'LibrA21101998' rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no" ./ levelupgame@153.92.5.213:/home/levelupgame/shrt.levelupgamehub.com/
+          sshpass -p 'LibrA21101998' ssh -o StrictHostKeyChecking=no levelupgame@153.92.5.213 'cd /home/levelupgame/shrt.levelupgamehub.com && php artisan key:generate --ansi && php artisan migrate --force && php artisan optimize:clear && php artisan config:clear'
